@@ -40,7 +40,7 @@ public abstract class Shape {
     public abstract double getPerimeter();
 
     public String toString() {
-        return "Shape[color=" + color +", filled=" + filled + "]";
+        return "Shape[color=" + color +",filled=" + filled + "]";
     }
 
 }
