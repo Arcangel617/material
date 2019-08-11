@@ -1,6 +1,6 @@
 
-# Created by https://www.gitignore.io/api/java,maven,intellij,code-java,intellij+all,intellij+iml
-# Edit at https://www.gitignore.io/?templates=java,maven,intellij,code-java,intellij+all,intellij+iml
+# Created by https://www.gitignore.io/api/java,sonar,maven,intellij,sonarqube,code-java,intellij+all,intellij+iml
+# Edit at https://www.gitignore.io/?templates=java,sonar,maven,intellij,sonarqube,code-java,intellij+all,intellij+iml
 
 ### Code-Java ###
 # Language Support for Java(TM) by Red Hat extension for Visual Studio Code - https://marketplace.visualstudio.com/items?itemName=redhat.java
@@ -230,4 +230,20 @@ buildNumber.properties
 .mvn/timing.properties
 .mvn/wrapper/maven-wrapper.jar
 
-# End of https://www.gitignore.io/api/java,maven,intellij,code-java,intellij+all,intellij+iml
+### Sonar ###
+#Sonar generated dir
+/.sonar/
+
+### SonarQube ###
+# SonarQube ignore files.
+#
+# https://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner
+# Sonar Scanner working directories
+.sonar/
+.scannerwork/
+
+# http://www.sonarlint.org/commandline/
+# SonarLint working directories, configuration files (including credentials)
+.sonarlint/
+
+# End of https://www.gitignore.io/api/java,sonar,maven,intellij,sonarqube,code-java,intellij+all,intellij+iml
