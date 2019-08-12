@@ -1,16 +1,33 @@
 package com.ejerciciossimples.progii.tsp;
 
 public class Ejercicio6 {
-	public static void main(String[] args) {
+
+	public String returnOddNumbersBetween100and1() {
+		StringBuilder stringBuilder = new StringBuilder();
+
+		for (int i = 100; i > 0; i--) {
+			if (i % 2 != 0) {
+				if (i == 1) {
+					stringBuilder.append(i);
+				} else {
+					stringBuilder.append(i).append(",");
+				}
+			}
+		}
+
+		return stringBuilder.toString();
+	}
+
+	public int returnOddNumbersSumFrom100to1() {
 		int suma = 0;
 
-		for (int i = 100; i >= 1; i--) {
+		for (int i = 100; i > 1; i--) {
 			if (i % 2 != 0) {
-				System.out.print(i + " ");
 				suma = suma + i;
 			}
 		}
 
-		System.out.println("\nSuma: " + suma);
+		return suma;
 	}
+
 }

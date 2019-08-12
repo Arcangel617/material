@@ -1,9 +1,5 @@
 package com.ejerciciossimples.progii.tsp;
 
-/**
- * Hacer​ ​ un​ ​ programa​ ​ que​ ​ imprima​ ​ los​ ​ números​ ​ del​ ​ 100​ ​ al​ ​ 0 ​ ​ en​ ​ orden​ ​ decreciente
- */
-
 public class Ejercicio2 {
 
     public String returnNumbersFrom100to0() {

@@ -1,9 +1,5 @@
 package com.ejerciciossimples.progii.tsp;
 
-/**
- * ​ ​Hacer​ ​ un​ ​ programa​ ​ que​ ​ imprima​ ​ los​ ​ números​ ​ del​ ​ 0 ​ ​ al​ ​ 100
- */
-
 public class Ejercicio1 {
 
     public String returnNumbersFrom0to100() {

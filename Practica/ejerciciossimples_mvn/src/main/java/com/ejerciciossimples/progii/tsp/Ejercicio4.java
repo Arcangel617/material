@@ -1,9 +1,5 @@
 package com.ejerciciossimples.progii.tsp;
 
-/**
- * Hacer​ ​ un​ ​ programa​ ​ que​ ​ imprima​ ​ los​ ​ números​ ​ pares​ ​ entre​ ​ el​ ​ 0 ​ ​ al​ ​ 100
- */
-
 public class Ejercicio4 {
 
     public String returnEvenNumbersBetween0and100() {
@@ -22,4 +18,5 @@ public class Ejercicio4 {
 
         return stringBuilder.toString();
     }
+
 }
