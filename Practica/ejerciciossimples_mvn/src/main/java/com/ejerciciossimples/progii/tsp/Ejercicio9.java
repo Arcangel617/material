@@ -6,18 +6,16 @@
 package com.ejerciciossimples.progii.tsp;
 
 public class Ejercicio9 {
-	
-	public static void main(String[] args) {
 
-		int suma = 0;
+	public int returnSumMultipleOf3Between0And100() {
+		int sum = 0;
 
-		for (int i = 0; i <= 100 ; i++) {
-			if (i % 3 == 0) {
-				suma = suma + i;			
+		for (int i = 0; i <= 100; i++) {
+			if (i % 2 != 0) {
+				sum +=  i;
 			}
 		}
 
-		System.out.println("Suma: " + suma);
-
+		return sum;
 	}
 }

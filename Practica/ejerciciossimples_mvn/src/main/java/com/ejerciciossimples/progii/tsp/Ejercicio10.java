@@ -6,19 +6,32 @@
 package com.ejerciciossimples.progii.tsp;
 
 public class Ejercicio10 {
-	
-	public static void main(String[] args) {
 
+	public int countMultiplesOf5Between1and500() {
 		int count = 0;
 
 		for (int i = 1; i < 500 ; i++) {
 			if (i % 5 == 0) {
-				System.out.print(i + " ");
-				count++;			
+				count++;
 			}
 		}
 
-		System.out.println("\nMultiplos de 5: " + count);
+		return count;
+	}
 
+	public String returnMultiplesOf5Between1And500() {
+		StringBuilder stringBuilder = new StringBuilder();
+
+		for (int i = 1; i < 500 ; i++) {
+			if (i % 5 == 0) {
+				if (i == 495) {
+					stringBuilder.append(i);
+				} else {
+					stringBuilder.append(i).append(",");
+				}
+			}
+		}
+
+		return stringBuilder.toString();
 	}
 }
