@@ -7,7 +7,7 @@ package com.ejerciciossimples.progii.tsp;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class Ejercicio10Test {
 
