@@ -1,25 +1,34 @@
 package com.tsp.example;
 
 import com.tsp.example.domain.Account;
+import com.tsp.example.domain.Bank;
+import com.tsp.example.domain.Client;
 
 public class Main {
 
   public static void main(String[] args) {
 
-    Account acc = new Account(1);
+    Account account = new Account(999);
 
-    acc.setBalance(1000.50);
+    Client client = new Client();
+    client.setName("Juan");
+    client.setLastName("Perez");
 
-    double d = acc.getBalance();
+    // Asocio Account con Client
+    account.setClient(client);
+    account.getClient().setLastName("Gomez");
 
-    System.out.println(acc.getAccountNumber());
-    System.out.println(d);
+    // Asocio Bank con Account
+    Bank bank = new Bank();
+    bank.setName("Macro");
+    bank.setAccount(account);
 
-    acc.credit(500);
+    System.out.println(client.getLastName());
 
-    d = acc.getBalance();
+    System.out.println(account.getClient().getLastName());
 
-    System.out.println(d);
+    account.getClient().printFullName();
+
   }
 
 }
