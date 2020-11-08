@@ -2,7 +2,7 @@ package org.example;
 
 public class Ejercicio1 {
 
-  public String returnNumbersFrom0to100() {
+  public static void main(String[] args) {
     StringBuilder stringBuilder = new StringBuilder();
 
     for (int i = 0; i <= 100; i++) {
@@ -13,6 +13,6 @@ public class Ejercicio1 {
       }
     }
 
-    return stringBuilder.toString();
+    System.out.println(stringBuilder.toString());
   }
 }

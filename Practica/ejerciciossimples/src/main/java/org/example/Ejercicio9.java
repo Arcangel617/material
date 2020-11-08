@@ -1,13 +1,8 @@
-/*
- * Copyright (c) 2019 Arcangel Andres Artigue.
- * All rights reserved.
- */
-
 package org.example;
 
 public class Ejercicio9 {
 
-  public int returnSumMultipleOf3Between0And100() {
+  public static void main(String[] args) {
     int sum = 0;
 
     for (int i = 0; i <= 100; i++) {
@@ -16,6 +11,6 @@ public class Ejercicio9 {
       }
     }
 
-    return sum;
+    System.out.println("Suma: " + sum);
   }
 }

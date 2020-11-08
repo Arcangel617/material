@@ -1,17 +1,14 @@
-/*
- * Copyright (c) 2019 Arcangel Andres Artigue.
- * All rights reserved.
- */
-
 package org.example;
 
 public class Ejercicio6 {
 
-  public String returnOddNumbersBetween100and1() {
+  public static void main(String[] args) {
     StringBuilder stringBuilder = new StringBuilder();
+    int suma = 0;
 
     for (int i = 100; i > 0; i--) {
       if (i % 2 != 0) {
+        suma = suma + i;
         if (i == 1) {
           stringBuilder.append(i);
         } else {
@@ -20,19 +17,7 @@ public class Ejercicio6 {
       }
     }
 
-    return stringBuilder.toString();
+    System.out.println("Numeros impares: " + stringBuilder.toString());
+    System.out.println("Suma: " + suma);
   }
-
-  public int returnOddNumbersSumFrom100to1() {
-    int suma = 0;
-
-    for (int i = 100; i > 1; i--) {
-      if (i % 2 != 0) {
-        suma = suma + i;
-      }
-    }
-
-    return suma;
-  }
-
 }

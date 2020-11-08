@@ -1,20 +1,14 @@
-/*
- * Copyright (c) 2019 Arcangel Andres Artigue.
- * All rights reserved.
- */
-
 package org.example;
 
 public class Ejercicio3 {
 
-  public int returnTheSumFirst100IntegerNumbers() {
+  public static void main(String[] args) {
     int sum = 0;
 
     for (int i = 0; i < 100; i++) {
       sum = sum + i;
     }
 
-    return sum;
+    System.out.println(sum);
   }
-
 }

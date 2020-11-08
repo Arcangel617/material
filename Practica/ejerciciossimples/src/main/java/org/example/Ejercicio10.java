@@ -1,29 +1,14 @@
-/*
- * Copyright (c) 2019 Arcangel Andres Artigue.
- * All rights reserved.
- */
-
 package org.example;
 
 public class Ejercicio10 {
 
-  public int countMultiplesOf5Between1and500() {
+  public static void main(String[] args) {
+    StringBuilder stringBuilder = new StringBuilder();
     int count = 0;
 
     for (int i = 1; i < 500; i++) {
       if (i % 5 == 0) {
         count++;
-      }
-    }
-
-    return count;
-  }
-
-  public String returnMultiplesOf5Between1And500() {
-    StringBuilder stringBuilder = new StringBuilder();
-
-    for (int i = 1; i < 500; i++) {
-      if (i % 5 == 0) {
         if (i == 495) {
           stringBuilder.append(i);
         } else {
@@ -32,6 +17,7 @@ public class Ejercicio10 {
       }
     }
 
-    return stringBuilder.toString();
+    System.out.println("Multiplos de 5: " + stringBuilder.toString());
+    System.out.println("Total: " + count);
   }
 }

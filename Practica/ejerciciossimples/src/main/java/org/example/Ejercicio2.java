@@ -1,13 +1,8 @@
-/*
- * Copyright (c) 2019 Arcangel Andres Artigue.
- * All rights reserved.
- */
-
 package org.example;
 
 public class Ejercicio2 {
 
-  public String returnNumbersFrom100to0() {
+  public static void main(String[] args) {
     StringBuilder stringBuilder = new StringBuilder();
 
     for (int i = 100; i >= 0; i--) {
@@ -17,7 +12,6 @@ public class Ejercicio2 {
         stringBuilder.append(i);
       }
     }
-
-    return stringBuilder.toString();
+    System.out.println(stringBuilder.toString());
   }
 }

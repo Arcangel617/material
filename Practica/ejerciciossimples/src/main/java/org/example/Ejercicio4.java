@@ -1,14 +1,8 @@
-/*
- * Copyright (c) 2019 Arcangel Andres Artigue.
- * All rights reserved.
- */
-
 package org.example;
 
 public class Ejercicio4 {
 
-  public String returnEvenNumbersBetween0and100() {
-
+  public static void main(String[] args) {
     StringBuilder stringBuilder = new StringBuilder();
 
     for (int i = 0; i <= 100; i++) {
@@ -21,7 +15,6 @@ public class Ejercicio4 {
       }
     }
 
-    return stringBuilder.toString();
+    System.out.println(stringBuilder.toString());
   }
-
 }
