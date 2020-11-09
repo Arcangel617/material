@@ -10,7 +10,7 @@ public class Ejercicio22 {
     int[] numeros = new int[5];
 
     System.out.println("Ingrese cinco numeros: ");
-    for (int i = 0; i < 5; i++){
+    for (int i = 0; i < 5; i++) {
       System.out.print("[" + i + "] = ");
       numeros[i] = scanner.nextInt();
     }
