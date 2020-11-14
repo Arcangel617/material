@@ -2,6 +2,6 @@ package com.example.exercisetwelve;
 
 public interface Resizable {
 
-    void resize(int percent);
+  void resize(int percent);
 
 }

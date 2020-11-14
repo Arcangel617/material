@@ -2,12 +2,12 @@ package com.example.exerciseeleven;
 
 public interface Movable {
 
-    void moveUp();
+  void moveUp();
 
-    void moveDown();
+  void moveDown();
 
-    void moveRight();
+  void moveRight();
 
-    void moveLeft();
+  void moveLeft();
 
 }

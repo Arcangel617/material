@@ -2,8 +2,8 @@ package com.example.exercisetwelve;
 
 public interface GeometricObject {
 
-    double getPerimeter();
+  double getPerimeter();
 
-    double getArea();
+  double getArea();
 
 }

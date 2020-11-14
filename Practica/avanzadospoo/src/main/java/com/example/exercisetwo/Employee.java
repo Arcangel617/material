@@ -2,52 +2,52 @@ package com.example.exercisetwo;
 
 public class Employee {
 
-    private int id;
-    private String firstName;
-    private String lastName;
-    private int salary;
+  private int id;
+  private String firstName;
+  private String lastName;
+  private int salary;
 
-    public Employee(int id, String firstName, String lastName, int salary) {
-        this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.salary = salary;
-    }
+  public Employee(int id, String firstName, String lastName, int salary) {
+    this.id = id;
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.salary = salary;
+  }
 
-    public int getId() {
-        return id;
-    }
+  public int getId() {
+    return id;
+  }
 
-    public String getFirstName() {
-        return firstName;
-    }
+  public String getFirstName() {
+    return firstName;
+  }
 
-    public String getLastName() {
-        return lastName;
-    }
+  public String getLastName() {
+    return lastName;
+  }
 
-    public int getSalary() {
-        return salary;
-    }
+  public int getSalary() {
+    return salary;
+  }
 
-    public String getName() {
-        return firstName + " " + lastName;
-    }
+  public void setSalary(int salary) {
+    this.salary = salary;
+  }
 
-    public void setSalary(int salary) {
-        this.salary = salary;
-    }
+  public String getName() {
+    return firstName + " " + lastName;
+  }
 
-    public int getAnnualSalary() {
-        return salary * 12;
-    }
+  public int getAnnualSalary() {
+    return salary * 12;
+  }
 
-    public int raiseSalary(int percent) {
-        int percentage = percent * salary;
-        return salary + percentage;
-    }
+  public int raiseSalary(int percent) {
+    int percentage = percent * salary;
+    return salary + percentage;
+  }
 
-    public String toString() {
-        return "Employee[id=" + id + ",name=" + getName() + ",salary=" + salary + "]";
-    }
+  public String toString() {
+    return "Employee[id=" + id + ",name=" + getName() + ",salary=" + salary + "]";
+  }
 }

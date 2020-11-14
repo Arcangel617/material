@@ -5,31 +5,32 @@ import static java.lang.Math.pow;
 
 public class Circle {
 
-    private double radius = 1.0;
+  private double radius = 1.0;
 
-    public Circle() {}
+  public Circle() {
+  }
 
-    public Circle(double radius) {
-        this.radius = radius;
-    }
+  public Circle(double radius) {
+    this.radius = radius;
+  }
 
-    public double getRadius() {
-        return radius;
-    }
+  public double getRadius() {
+    return radius;
+  }
 
-    public void setRadius(double radius) {
-        this.radius = radius;
-    }
+  public void setRadius(double radius) {
+    this.radius = radius;
+  }
 
-    public double getCirumference() {
-        return 2 * PI * radius;
-    }
+  public double getCircumference() {
+    return 2 * PI * radius;
+  }
 
-    public double getArea() {
-        return PI * pow(radius,2);
-    }
+  public double getArea() {
+    return PI * pow(radius, 2);
+  }
 
-    public String toString() {
-        return "Circle[radius=" + radius + "]";
-    }
+  public String toString() {
+    return "Circle[radius=" + radius + "]";
+  }
 }
